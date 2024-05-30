@@ -1,0 +1,9 @@
+.git
+*Dockerfile*
+*docker-compose*
+node_modules
+.sanity
+.dockerignore
+npm-debug.log
+.gitignore
+.npmrc

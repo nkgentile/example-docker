@@ -9,7 +9,9 @@
     "deploy-graphql": "sanity graphql deploy",
     "typecheck": "tsc",
     "lint": "eslint --fix --ignore-path .prettierignore .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "docker:build": "docker build -t studio .",
+    "docker:run": "docker run -p 3333:80 studio"
   },
   "dependencies": {
     "@sanity/vision": "^3.44.0",
