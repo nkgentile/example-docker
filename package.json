@@ -3,15 +3,13 @@
   "private": true,
   "scripts": {
     "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
+    "start": "docker run -p 3333:80 studio",
+    "build": "sanity build && docker build -t studio .",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
     "typecheck": "tsc",
     "lint": "eslint --fix --ignore-path .prettierignore .",
-    "format": "prettier --write .",
-    "docker:build": "docker build -t studio .",
-    "docker:run": "docker run -p 3333:80 studio"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@sanity/vision": "^3.44.0",
