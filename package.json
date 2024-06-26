@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "sanity dev",
-    "start": "docker run -p 3333:80 studio",
+    "start": "docker run -p 3333:80 --env-file .env.docker studio",
     "build": "sanity build && docker build -t studio .",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy",
