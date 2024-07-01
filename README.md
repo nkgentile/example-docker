@@ -11,11 +11,11 @@ Sanity Studio is a single-page, React application that can be built and hosted a
 ## Usage
 
 ```sh
-# Builds the container
-npm run docker:build
+# Builds Studio and a Docker image
+npm run build
 
 # Serves the Studio from the container, locally at http://localhost:3333
-npm run docker:run
+npm run start
 ```
 
 ## Resources
